@@ -1,0 +1,589 @@
+@import "nullstyle.scss";
+$lime:#6dce0e;
+
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Arial';
+}
+.bold{
+	font-weight: bold !important;
+}
+.big {
+	font-size: 28px !important;
+}
+.right{
+	padding-right: 20px;
+	border-radius: 0px 15px 15px 0px;
+}
+.left{
+	padding-left: 20px;
+	border-radius: 15px 0px 0px 15px;
+}
+.white{
+	width: 100%;
+	height: 300px;
+	border: 2px solid white;
+	border-radius:20px;
+}
+.center{
+	text-align: center !important;
+	line-height: 30px;
+}
+.lime {
+	color: $lime !important;
+}
+.second {
+	margin-left: 10px;
+}
+.decor{
+	text-decoration: underline;
+	text-decoration-color: #6dce0e;
+	text-decoration-thickness: 6px;
+}
+.hidden{
+	overflow: hidden;
+}
+.title{
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+}
+.description{
+	font-size: 24px;
+	text-align: center;
+}
+.focus{
+	font-size: 28px;
+	color: $lime;
+	text-align: center;
+	font-weight: 600;
+}
+.margin_standart{
+	margin: 30px 0px;
+}
+// standart
+.head {
+width:100%;
+}
+.wrapper {
+	min-height: 100vh;
+	max-width: 100%;
+	overflow: hidden;
+	background-color: #10171f;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+.content {
+	flex: 1 1 auto;
+}
+/* Header styles */
+.head {
+	font-size: 18px;
+	padding: 30px 0px;
+	background-color: #0d131a;
+	color: white;
+	flex: 0 1 auto;
+	border-bottom: 1px solid #6dce0e;
+}
+.head__contact {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.number{
+	font-weight: bold;
+	display: block;
+	color: white;
+}
+.head__numbers {}
+.head__company {}
+.head__mail {}
+.head__mail a{
+	color: white;
+}
+.head__address {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.head__location {}
+.head__button {}
+.head__menu {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.head__menu_punct {
+	border: 1px solid #6dce0e;
+	border-radius: 50px;
+	padding: 10px 20px;
+}
+.head__menu_punct a{
+	color: white;
+}
+.head__navmenu {
+	flex: 0 1 60%;
+	display: flex;
+	justify-content: space-between;
+}
+.head__socials {
+	display: flex;
+}
+.social__media {
+	margin-right: 10px;
+}
+.menu-btn{
+	display: none;
+}
+.open-button {
+  background-color: #9fe831;
+  font-size: 17px;
+  color: black;
+  padding: 15px 14px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  width: 230px;
+  border-radius: 40px;
+}
+/* Всплывающая форма-скрыта по умолчанию */
+.form-popup {
+	  display: none;
+	  position: fixed;
+	  right: 20%;
+	  border: 3px solid #6dce0e;
+	  z-index: 9;
+	  border-radius: 15px;
+}
+/* Добавить стили для контейнера формы */
+.form-container {
+	  max-width: 100%;
+	  padding: 30px 10px;
+	  background-color: white;
+	 	border-radius: 12px;
+}
+/* Поля ввода полной ширины */
+.form-container input[type=text], .form-container input[type=tel] {
+	  width: 100%;
+	  padding: 15px;
+	  margin: 12px 0px;
+	  border: none;
+	  background: #f1f1f1;
+	  border-radius: 10px;
+}
+.head .form-container input[type=tel]{
+	margin: 12px 0px !important;
+}
+/* Когда входы получают фокус, сделайте что-нибудь */
+.form-container input[type=text]:focus, .form-container input[type=tel]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.b__popup{
+	 width:100%;
+   height: 2000px;
+   background-color: rgba(0,0,0,0.5);
+   overflow:hidden;
+   position:fixed;
+   z-index: 6;
+   top:0px;
+}
+/* Установите стиль для кнопки отправить/войти */
+.form-container .btn {
+	  background-color: #4CAF50;
+	  color: white;
+	  padding: 16px 20px;
+	  border: none;
+	  cursor: pointer;
+	  width: 100%;
+	  margin-bottom:10px;
+	  opacity: 0.8;
+	  border-radius: 10px;
+}
+/* Добавить красный цвет фона для кнопки "Отмена" */
+.form-container .cancel {
+  	background-color: red;
+  	position: absolute;
+  	top: 0px;
+  	right: 0px;
+  	border-radius: 0px 10px 0px 10px;
+  	padding: 9px 14px;
+  	margin: -3px;
+}
+/* Добавить некоторые эффекты наведения на кнопки */
+.form-container .btn:hover, .open-button:hover {
+  	opacity: 1;
+}
+.form-color {
+	color: black;
+	padding-right: 20px;
+}
+.container{
+	width: 80%;
+	margin: 0px auto;
+}
+/* Header styles end */
+// first block
+
+.first {
+	&__block {
+			background:url('../img/1212.jpg');
+			padding: 100px 0px;
+		&__title {
+			margin-top:40px
+		}
+		&__description {
+			padding:30px 0px;
+			font-size: 22px;
+		}
+		&__focus {}
+	}
+}
+
+// first block end
+/* why */
+.why{
+	margin: 100px 0px;
+}
+.why__blocks{
+}
+.why__block{
+	display: flex;
+	margin-bottom: 55px;
+}
+.why__block:last-child{
+	margin-bottom: 30px;
+}
+.why__image{
+	flex: 1 1 40%;
+	text-align: center;
+	margin-bottom: 25px;
+	border: 1px solid #6dce0e;
+	border-radius: 10px;
+	height: 250px;
+}
+.why__image img{
+	border-radius: 10px;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+.why__textblock{
+	font-size: 24px;
+	flex: 1 1 60%;
+	padding: 30px;
+	padding-bottom: 0px;
+	display: flex;
+	font-weight: 500;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid #6dce0e;
+	margin: 40px 0px 60px 0px;
+	background: white;
+	color: black;
+}
+.why__block img{
+	height: 100%;
+	width: 100%;
+	font-family: serif;
+}
+.why__bigtext{
+	font-size: 64px;
+	font-weight: bolder;
+	-webkit-text-stroke:2px #6dce0e;
+	color: transparent;
+	position: relative;
+	top: 30%;
+	left: 40%;
+}
+.why .focus{
+	margin-top:40px;
+}
+/* why end */
+/* rossel */
+.rossel {
+	margin:100px 0px;
+	&__main {
+		display:flex;
+	}
+	&__text {
+		flex: 1 1 50%;
+		padding: 15% 25px;
+		text-align: left;
+		font-size: 28px;
+		line-height: 30px;
+		word-spacing: 7px;
+		& span{
+			display:inline;
+		}
+	}
+	&__image {
+		flex: 1 1 50%;
+	}
+}
+.rossel .white{
+	height:600px;
+}
+/* rossel end*/
+// five problem 
+.five {
+	&__problem {
+		&__title {
+			margin-bottom:25px;
+		}
+		&__focus {
+			margin-bottom:15px;
+			text-align: left;
+		}
+		&__main {
+			display:flex;
+			margin:80px 0px;
+		}
+		&__image {
+			flex:1 1 50%;
+		}
+		&__text {
+			flex: 1 1 50%;
+		}
+		&__horizontal{
+			height:3px;
+			background:$lime;
+		}
+		&__description{
+			margin-top:25px;
+			text-align: left;
+		}
+	}
+}
+
+
+// five problem end
+/*footer*/
+.foot{
+	border-top: 1px solid #6dce0e;
+	display: flex;
+	align-items: center;
+	background-color: #0d131a;
+	color: white;
+	flex: 0 1 auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-top: 60px;
+	font-size: 18px;
+}
+.foot .number{
+	display: inline-block;
+}
+.foot .container{
+	display: flex;
+	width: 90%;
+	justify-content: space-between;
+}
+.foot__block{
+	padding: 20px;
+	margin: 10px;
+	flex: 0 1 25%;
+}
+.foot__logo{
+}
+.foot__info{
+	text-align: justify;
+	line-height: 30px;
+}
+.foot__nav {
+}
+.foot__menu {
+}
+.foot__title {
+	font-weight: bold;
+	font-size: 22px;
+	padding-bottom: 25px;
+}
+.foot__navmenu {
+}
+.foot__punct{
+	padding-bottom: 30px;
+}
+.foot__punct a{
+	color: white;
+}
+.foot__punct:before {
+	content: '';
+	background-image: url('http://prom-holding.com/wp-content/uploads/2022/08/right-arrow.png');
+	background-size: cover;
+	padding-right: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	background-repeat: no-repeat
+}
+.foot__contacts{
+}
+.foot__map{
+	border: 1px solid #6dce0e;
+}
+.foot__address{
+	padding-bottom: 18px;
+	font-size: 16px;
+	font-weight: 400;
+}
+.foot__address:before{
+	content: '';
+	background-image: url('http://prom-holding.com/wp-content/uploads/2022/08/location.png');
+	background-size: cover;
+	padding-right: 13px;
+	padding-top: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	background-repeat: no-repeat
+}
+.foot__number{
+	padding-bottom: 18px;
+}
+.foot__number:before{
+	content: '';
+	background-image: url('http://prom-holding.com/wp-content/uploads/2022/08/phone.png');
+	background-size: cover;
+	padding-right: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	background-repeat: no-repeat
+}
+.foot__email {
+	padding-bottom: 18px;
+}
+.foot__email a{
+	color: white;
+
+}
+.foot__grafik{
+	line-height: 25px;
+}
+.head .foot__grafik{
+	margin-top: 5px;
+}
+.foot__grafik:before{
+	content: '';
+	background-image: url('http://prom-holding.com/wp-content/uploads/2022/08/time.png');
+	background-size: cover;
+	padding-right: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	background-repeat: no-repeat
+}
+.cont {
+	flex: 1 1 35%;
+}
+.foot__email:before{
+	content: '';
+	background-image: url('http://prom-holding.com/wp-content/uploads/2022/09/email.png');
+	background-size: cover;
+	padding-right: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	background-repeat: no-repeat
+}
+/* footer end */
+/* callback */
+.callBack {
+   position: fixed;
+   bottom: 30px;
+   right: 20px;
+   z-index: 999;
+}
+.callBack__body {
+   position: relative;
+}
+.callBack__icon {
+   width: 50px;
+   height: 50px;
+   cursor: pointer;
+   position: relative;
+   z-index: 0;
+   transition: 1.3 ease-in-out;
+}
+.callBack__icon:hover {
+   transform: scale(1.1);
+}
+.callBack__icon::before {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+   height: 100%;
+   border: 1px solid #6dce0e;
+   border-radius: 50%;
+   animation: pulse 1.1s linear infinite;
+}
+.callBack__icon::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 100%;
+   height: 100%;
+   border: 1px solid #6dce0e;
+   border-radius: 50%;
+   animation: pulse 2.1s linear infinite;
+}
+.callBack__body img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.callBack__phone,
+.callBack__whatsApp,
+.callBack__mail {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   z-index: 0;
+   margin: 10px;
+   cursor: pointer;
+   z-index: -1;
+   transition: all .8s ease;
+   display: block;
+}
+.callBack__phone:hover,
+.callBack__whatsApp:hover,
+.callBack__mail:hover {
+   width: 35px;
+   height: 35px;
+}
+.callBack__phone.active {
+   transform: translateY(-70px)
+}
+.callBack__whatsApp.active {
+   transform: translateY(-120px)
+}
+.callBack__mail.active {
+   transform: translateY(-170px)
+}
+
+#go-top {
+  position: fixed; 
+  bottom: 25px; 
+  left: 10px; 
+  cursor:pointer; 
+  display:none;
+  width: 50px;
+  height: 60px;
+  transition: transform 0.3s linear;
+}
+#go-top img{
+	width: 100%;
+	height: 100%;
+}
+#go-top:hover {
+	transform: scale(1.1);
+}
