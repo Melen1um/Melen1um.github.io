@@ -255,7 +255,7 @@ width:100%;
 // first block end
 /* why */
 .why{
-	margin: 100px 0px;
+	margin: 120px 0px;
 }
 .why__blocks{
 }
@@ -289,16 +289,75 @@ width:100%;
 	top: 30px;
 	left: 45%;
 }
-.left__big{
-	left:6%;
-}
 .why .focus{
 	margin-top:40px;
 }
 /* why end */
+/* formblock */
+.formblock{
+	margin: 160px 0px;
+}
+.formblock .container{
+	padding: 50px 30px 50px 0px;
+	background-color: white;
+	border: 1px solid #6dce0e;
+	border-radius: 20px;
+	color: black;
+}
+.formblock__title{
+	text-align: center;
+	padding-bottom: 40px;
+	font-size: 36px;
+	color: #6dce0e;
+}
+.formblock__form{
+	padding-left: 210px;
+}
+.formblock__image{
+	width: 350px;
+	position: absolute;
+	left: 20px;
+}
+.formblock__image img{
+	width: 100%;
+	height: 100%;
+}
+.formblock__block	{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.formblock__input{
+	height: 40px;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 5px 0px;
+	border: 1px solid black;
+}
+.formblock__punct{
+}
+.formblock__btn{
+  background-color: #9fe831;
+  font-size: 16px;
+  color: black;
+  padding: 12px 14px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  width: 230px;
+  height: 43px;
+  border-radius: 15px;	
+  margin-top: 15px;
+}
+.formblock__btn:hover{
+	opacity: 1;
+}
+.formblock__label{
+}
+/* formblock end */
 /* rossel */
 .rossel {
-	margin:100px 0px;
+	margin:120px 0px;
 	&__main {
 		display:flex;
 	}
@@ -375,6 +434,40 @@ left:100%;
 }
 
 // five problem end
+// facts 
+.facts {
+	margin:120px 0px;
+	&__title {
+		margin-bottom:35px;
+	}
+	&__main {
+		display:flex;
+	}
+	&__image {
+		flex:1 1 50%;
+	}
+	&__textblock {
+		flex: 1 1 50%;
+		line-height: 28px;
+		padding-top:30px;
+	}
+}
+.facts__title img{
+	width:40px;
+	height:40px;
+	object-fit: cover;
+	position:relative;
+	top:-6px;
+}
+
+// facts end
+// exp
+
+
+
+
+
+// exp end
 /*footer*/
 .foot{
 	border-top: 1px solid #6dce0e;

@@ -391,7 +391,7 @@ body {
 }
 /* why */
 .why {
-  margin: 100px 0px;
+  margin: 120px 0px;
 }
 
 .why__block {
@@ -435,18 +435,87 @@ body {
   left: 45%;
 }
 
-.left__big {
-  left: 6%;
-}
-
 .why .focus {
   margin-top: 40px;
 }
 
 /* why end */
+/* formblock */
+.formblock {
+  margin: 160px 0px;
+}
+
+.formblock .container {
+  padding: 50px 30px 50px 0px;
+  background-color: white;
+  border: 1px solid #6dce0e;
+  border-radius: 20px;
+  color: black;
+}
+
+.formblock__title {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 36px;
+  color: #6dce0e;
+}
+
+.formblock__form {
+  padding-left: 210px;
+}
+
+.formblock__image {
+  width: 350px;
+  position: absolute;
+  left: 20px;
+}
+
+.formblock__image img {
+  width: 100%;
+  height: 100%;
+}
+
+.formblock__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formblock__input {
+  height: 40px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5px 0px;
+  border: 1px solid black;
+}
+
+.formblock__btn {
+  background-color: #9fe831;
+  font-size: 16px;
+  color: black;
+  padding: 12px 14px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  width: 230px;
+  height: 43px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+.formblock__btn:hover {
+  opacity: 1;
+}
+
+/* formblock end */
 /* rossel */
 .rossel {
-  margin: 100px 0px;
+  margin: 120px 0px;
 }
 .rossel__main {
   display: -webkit-box;
@@ -540,6 +609,39 @@ body {
     left: 100%;
   }
 }
+.facts {
+  margin: 120px 0px;
+}
+.facts__title {
+  margin-bottom: 35px;
+}
+.facts__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.facts__image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+.facts__textblock {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  line-height: 28px;
+  padding-top: 30px;
+}
+
+.facts__title img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  top: -6px;
+}
+
 /*footer*/
 .foot {
   border-top: 1px solid #6dce0e;
