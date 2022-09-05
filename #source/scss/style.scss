@@ -462,8 +462,47 @@ left:100%;
 
 // facts end
 // exp
-
-
+.exp {
+	&__title {
+		margin-bottom:35px;
+	}
+	&__main {
+		display:flex;
+	}
+	&__image {
+		flex:1 1 40%;
+	}
+	&__image img{
+		object-fit: cover;
+		width:100%;
+		height:350px;
+		margin-bottom:40px;
+	}
+	&__blocks {
+		margin-left:15px;
+		flex: 1 1 60%;
+	}
+	&__block {
+		padding:25px;
+		padding-bottom:0px;
+		border:1px solid $lime;
+		border-radius:20px;
+		margin-bottom:32px;
+		text-align: left;
+		background:white;
+		color:black;
+	}
+	&__yes{
+		position:relative;
+		left:96%;
+		top:-8px;
+		background:$lime;
+		color:white;
+		padding:15px;
+		width:65px;
+		margin-bottom:-20px;
+	}
+}
 
 
 
