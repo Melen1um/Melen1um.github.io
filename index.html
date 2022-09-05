@@ -172,7 +172,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src=
 					</div>
 					<div class="five__problem__text left ">
 						<div class="focus five__problem__focus">Минимум деталей. </div>
- 						<input class="five__problem__horizontal" name="slider" type="range" value=0 min=0 max=100>
+  						<div class="five__problem__horizontal"><div class="circle"></div> </div>
 						<div class="description five__problem__description">
 						Чем меньше деталей и проще конструкция, тем легче обслуживать технику.  
 						</div>
@@ -181,7 +181,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src=
 				<div class="five__problem__main">
 					<div class="five__problem__text right">
 						<div class="focus five__problem__focus">Умное использование зазора между механизмами.</div>
- 						<input class="five__problem__horizontal" name="slider" type="range" value=15 min=0 max=100>
+ 						<div class="five__problem__horizontal"><div class="circle"></div> </div>
 						<div class="description five__problem__description">
 						 Например, верхняя рабочая полка рапсового стола не прилегает к боковине зерновой жатки. Это позволяет изменить угол атаки, а значит - избежать осыпания рапсовых стеблей. Конечный результат – уменьшение потерь и больше сбор.
 						 </div>
@@ -275,15 +275,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src=
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-	// polzunok
-	let polz = document.querySelectorAll('five__problem__horizontal')
-	for(var i = 0; i < polz.length; i++) {
-    polz[i].addEventListener('scroll', function(){
-    	if(polz[i].value<=100){
-    		polz[i].value+=10;
-    	};
-    });
-};
 
 	// button
 	function openForm() {
