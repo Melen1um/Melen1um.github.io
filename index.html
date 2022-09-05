@@ -108,7 +108,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src=
 							<div class="focus first__block__focus">
 				Специальные условия для торгующих организаций
 							</div>
-
+							<div class="first__block__button">
+								<input type="button" class="open-button" onclick="openForm()" value="Оставить заявку">
+							</div>
 					</div>
 				</section>
 				<!-- first block end -->
@@ -117,31 +119,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src=
 			<div class="container">
 				<div class="why__blocks">	
 				<div class="why__block ">
-					<div class="why__textblock left">
+					<div class="why__textblock">
 						Вы уже успели оценить капризный характер рапса и то, насколько сильно он осыпается в столкновении с обычными грубыми пальцами жатки?
 						<div class="why__bigtext">ВОПРОС 1</div>
 					</div>
-					<div class="why__image">
-					<img src="img/rapsgray.jpg" alt="">
-					</div>
 				</div>
 				<div class="why__block">
-				<div class="why__image">
-					<img src="img/rapscombain.jpg" alt="">
-				</div>
-				<div class="why__textblock right">
+				<div class="why__textblock">
 					Успехи соседа по полю вдохновили вас усилить вашу жатку для уборки рапса? 
-					<div class="why__bigtext">ВОПРОС 2</div>
+					<div class="why__bigtext left__big">ВОПРОС 2</div>
 				</div>
 				</div>
 				<div class="why__block">
-					<div class="why__textblock left">
+					<div class="why__textblock">
 					Или вы увеличиваете посевные и вам нужны дополнительные рапсовые столы? 
 
 					<div class="why__bigtext">ВОПРОС 3</div>
-					</div>
-					<div class="why__image">
-					<img src="img/rapsother.jpg" alt="">
 					</div>
 				</div>			
 					</div>
@@ -179,7 +172,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src=
 					</div>
 					<div class="five__problem__text left ">
 						<div class="focus five__problem__focus">Минимум деталей. </div>
-						<hr class="five__problem__horizontal">
+ 						<input class="five__problem__horizontal" name="slider" type="range" value=0 min=0 max=100>
 						<div class="description five__problem__description">
 						Чем меньше деталей и проще конструкция, тем легче обслуживать технику.  
 						</div>
@@ -188,9 +181,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src=
 				<div class="five__problem__main">
 					<div class="five__problem__text right">
 						<div class="focus five__problem__focus">Умное использование зазора между механизмами.</div>
-						<hr class="five__problem__horizontal">
+ 						<input class="five__problem__horizontal" name="slider" type="range" value=15 min=0 max=100>
 						<div class="description five__problem__description">
-						 Например, верхняя рабочая полка рапсового стола не прилегает к боковине зерновой жатки. Это позволяет изменить угол атаки, а значит - избежать осыпания рапсовых стеблей. Конечный результат – уменьшение потерь и больше сбор.» сделать крест-накрест фото
+						 Например, верхняя рабочая полка рапсового стола не прилегает к боковине зерновой жатки. Это позволяет изменить угол атаки, а значит - избежать осыпания рапсовых стеблей. Конечный результат – уменьшение потерь и больше сбор.
 						 </div>
 					</div>
 					<div class="five__problem__image white">
@@ -282,6 +275,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; j.async=true; j.src=
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
+	// polzunok
+	let polz = document.querySelectorAll('five__problem__horizontal')
+	for(var i = 0; i < polz.length; i++) {
+    polz[i].addEventListener('scroll', function(){
+    	if(polz[i].value<=100){
+    		polz[i].value+=10;
+    	};
+    });
+};
+
+	// button
 	function openForm() {
   document.getElementById("myForm").style.display = "block";
   document.querySelector(".popup").classList.toggle('b__popup');

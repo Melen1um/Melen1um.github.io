@@ -372,7 +372,10 @@ body {
 
 /* Header styles end */
 .first__block {
-  background: url("../img/1212.jpg");
+  background: url("../img/rapsback.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 100px 0px;
 }
 .first__block__title {
@@ -382,47 +385,27 @@ body {
   padding: 30px 0px;
   font-size: 22px;
 }
+.first__block__button {
+  text-align: center;
+  margin-top: 40px;
+}
 /* why */
 .why {
   margin: 100px 0px;
 }
 
 .why__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 55px;
+  margin-bottom: 70px;
 }
 
 .why__block:last-child {
   margin-bottom: 30px;
 }
 
-.why__image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
-  text-align: center;
-  margin-bottom: 25px;
-  border: 1px solid #6dce0e;
-  border-radius: 10px;
-  height: 250px;
-}
-
-.why__image img {
-  border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
 .why__textblock {
+  width: 80%;
   font-size: 24px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 60%;
-          flex: 1 1 60%;
-  padding: 30px;
+  padding: 25px;
   padding-bottom: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,15 +419,10 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid #6dce0e;
-  margin: 40px 0px 60px 0px;
+  margin: 50px auto 60px auto;
   background: white;
   color: black;
-}
-
-.why__block img {
-  height: 100%;
-  width: 100%;
-  font-family: serif;
+  border-radius: 20px;
 }
 
 .why__bigtext {
@@ -453,8 +431,12 @@ body {
   -webkit-text-stroke: 2px #6dce0e;
   color: transparent;
   position: relative;
-  top: 30%;
-  left: 40%;
+  top: 30px;
+  left: 45%;
+}
+
+.left__big {
+  left: 6%;
 }
 
 .why .focus {
@@ -518,13 +500,24 @@ body {
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
 }
-.five__problem__horizontal {
-  height: 3px;
-  background: #6dce0e;
-}
 .five__problem__description {
   margin-top: 25px;
   text-align: left;
+}
+
+input[type=range] {
+  -webkit-appearance: none !important;
+  height: 3px;
+  width: 100%;
+  background-color: #6dce0e !important;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: #6dce0e;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
 }
 
 /*footer*/
