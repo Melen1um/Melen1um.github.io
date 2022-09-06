@@ -523,25 +523,32 @@ left:100%;
 	}
 }
 table {
-	border: 1px solid white;
-	border-collapse: collapse;
+//	border: 1px solid white;
+	//border-collapse: collapse;
 }
 th {
-	border: 1px solid white;
+	//border: 1px solid white;
 	padding: 18px 9px;
-}
+	color:white;
+ background: -webkit-linear-gradient(0deg, #57a216,#a9e538);/* Chrome 10-25, Safari 5.1-6 */                         
+ background: linear-gradient(0deg, #57a216,#a9e538);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             }
 tr {
-	border: 1px solid white;
+//	border: 1px solid white;
 }
 td {
-	border: 1px solid white;
+	//border: 1px solid white;
 	padding: 14px 9px;
 	text-align: center;
 }
 .alignleft{
 text-align: left !important;
 }
-
+.shum{
+	color:#717546!important;
+}
+.mainwhite{
+	background:#2a2b28 !important;
+}
 // omut end
 /*footer*/
 .foot{

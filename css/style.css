@@ -709,28 +709,30 @@ body {
   margin: 20px 0px;
 }
 
-table {
-  border: 1px solid white;
-  border-collapse: collapse;
-}
-
 th {
-  border: 1px solid white;
   padding: 18px 9px;
-}
-
-tr {
-  border: 1px solid white;
+  color: white;
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left bottom, left top, from(#57a216), to(#a9e538));
+  background: linear-gradient(0deg, #57a216, #a9e538);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 td {
-  border: 1px solid white;
   padding: 14px 9px;
   text-align: center;
 }
 
 .alignleft {
   text-align: left !important;
+}
+
+.shum {
+  color: #717546 !important;
+}
+
+.mainwhite {
+  background: #2a2b28 !important;
 }
 
 /*footer*/
