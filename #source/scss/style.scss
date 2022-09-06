@@ -774,3 +774,26 @@ text-align: left !important;
 #go-top:hover {
 	transform: scale(1.1);
 }
+// button to more
+	#more {
+  display: none;
+}
+#more1{
+	display:none;
+}
+	#myBtn:hover{
+		cursor:pointer;
+	}
+	#myBtn{
+		font-size: 20px;
+    background-color:$lime;
+    border-radius: 30px;
+    padding: 16px 30px 16px 30px;
+		margin-top:20px;
+		text-align: center;
+}
+
+
+
+
+// more end

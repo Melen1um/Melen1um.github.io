@@ -246,8 +246,10 @@
 				<div class="exp__main">
 					<div class="exp__image">
 						<img src="img/rapsother.jpg" alt="">
+						<div id="more">
 						<img src="img/rapsgray.jpg" alt="">
 						<img src="img/rapscombain.jpg" alt="">
+						</div>
 					</div>
 					<div class="exp__blocks description">
 						<div class="exp__block">
@@ -262,6 +264,7 @@
 							Малая длина порога между режущим аппаратом и настилом позволяет собирать изреженный и низкорослый рапс, а также карликовые сорта
 						<div class="exp__yes">ДА</div>
 						</div>
+						<div id="more1">
 						<div class="exp__block">
 							Рифленая конструкция стола дает: <br>
 							1.	Жесткость и отсутствие прогибания стола вниз даже при ширине захвата 10,7 метров! <br>
@@ -282,11 +285,13 @@
 						<div class="exp__yes">ДА</div>
 						</div>
 						<div class="exp__block">
-							Упаковывается в защитный кожух для безопасной транспортировки
+							Упаковывается в защитный кожух для безопасной транспортировки<span id="dots">...</span>
 						<div class="exp__yes">ДА</div>
+						</div>
 						</div>
 					</div>
 				</div>
+<div class="center"><button onclick="myFunction()" id="myBtn">Показать больше</button></div>
 			</div>
 		</section>
 
@@ -556,5 +561,26 @@ $(function() {
 
 /* scroll to top end */
 </script>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+  var more1 = document.getElementById("more1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Показать больше";
+    moreText.style.display = "none";
+    more1.style.display = "none";
+
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Показать меньше";
+    moreText.style.display = "inline";
+    more1.style.display = "inline";
+  }
+}
+	</script>
 </body>
 </html>

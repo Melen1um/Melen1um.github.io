@@ -1011,3 +1011,24 @@ td {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+
+#more {
+  display: none;
+}
+
+#more1 {
+  display: none;
+}
+
+#myBtn:hover {
+  cursor: pointer;
+}
+
+#myBtn {
+  font-size: 20px;
+  background-color: #6dce0e;
+  border-radius: 30px;
+  padding: 16px 30px 16px 30px;
+  margin-top: 20px;
+  text-align: center;
+}
