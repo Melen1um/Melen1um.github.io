@@ -737,7 +737,9 @@ text-align: left !important;
 }
 // raps end
 // comps
-
+.comps{
+	margin:120px 0px;
+}
 .swiper .swiper-pagination {
    display: -webkit-box;
    display: -ms-flexbox;
@@ -808,6 +810,30 @@ text-align: left !important;
 }
 
 // comps end
+// eldar
+.eldar {
+	margin:120px 0px;
+	margin-bottom:0px;
+	&__main {
+		display:flex;
+	}
+	&__textblock {
+		flex: 1 1 50%;
+		margin-right:20px;
+		margin-top:5%;
+		margin-bottom:5%;
+
+	}
+	&__image {
+		flex: 1 1 50%;
+	}
+}
+.container {
+}
+.white {
+}
+
+// eldar end
 /*footer*/
 .foot{
 	border-top: 1px solid #6dce0e;
