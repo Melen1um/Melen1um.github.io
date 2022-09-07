@@ -133,8 +133,8 @@
 					</div>
 					<div class="focus">Мы поможем вам спасти свой урожай и получать на 20-30% больше прибыли каждый год.</div>
 			</div>
-		</section>
-	<!-- why end -->
+			</section>
+			<!-- why end -->
 		<!-- formblock -->
 	<section class="formblock">
 		<div class="container">
@@ -162,8 +162,8 @@
 				  </form>
 			</div>
 		</div>
-	</section>
-	<!-- formblock end -->
+		</section>
+		<!-- formblock end -->
 	<!--rossel -->
 		<section class="rossel">
 			<div class="container">
@@ -177,7 +177,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+			</section>
 	<!-- rossel end -->
 	<!-- fiveproblem -->
 		<section class="five__problem">
@@ -211,7 +211,7 @@
 				</div>
 
 			</div>
-		</section>
+			</section>
 
 	<!-- fiveproblem end -->
 	<!-- facts -->
@@ -231,7 +231,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+			</section>
 
 	<!-- facts end -->
 	<!-- exp -->
@@ -246,7 +246,7 @@
 				<div class="exp__main">
 					<div class="exp__image">
 						<img src="img/rapsother.jpg" alt="">
-						<div id="more">
+						<div id="more" class="b-toggle">
 						<img src="img/rapsgray.jpg" alt="">
 						<img src="img/rapscombain.jpg" alt="">
 						</div>
@@ -264,7 +264,7 @@
 							Малая длина порога между режущим аппаратом и настилом позволяет собирать изреженный и низкорослый рапс, а также карликовые сорта
 						<div class="exp__yes">ДА</div>
 						</div>
-						<div id="more1">
+						<div id="more1" class="b-toggle">
 						<div class="exp__block">
 							Рифленая конструкция стола дает: <br>
 							1.	Жесткость и отсутствие прогибания стола вниз даже при ширине захвата 10,7 метров! <br>
@@ -563,24 +563,25 @@ $(function() {
 </script>
 <script>
 function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-  var more1 = document.getElementById("more1");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Показать больше";
-    moreText.style.display = "none";
-    more1.style.display = "none";
-
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Показать меньше";
-    moreText.style.display = "inline";
-    more1.style.display = "inline";
-  }
-}
+	  var moreText = document.getElementById("more");
+	  var more1 = document.getElementById("more1");
+	  var btnText = document.getElementById("myBtn");
+    var className = moreText.className;
+    var classNameTwo = more1.className;
+    if( className.indexOf('expanded') == -1){
+        className += ' expanded';
+        classNameTwo += ' expanded';
+    		btnText.innerHTML = "Показать меньше";
+    }
+    else {
+        className = className.replace('expanded', '');
+        classNameTwo = classNameTwo.replace('expanded', '');
+        btnText.innerHTML = "Показать больше";
+    }
+    moreText.className = className;
+    more1.className = classNameTwo;
+    return false;
+};
 	</script>
 </body>
 </html>
