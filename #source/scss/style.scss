@@ -374,7 +374,15 @@ width:100%;
 		}
 	}
 	&__image {
+		border-radius:10px;
 		flex: 1 1 50%;
+		& img{
+			border-radius:10px;
+			width:100%;
+			height:100%;
+			object-fit: cover;
+			border:1px solid $lime;
+		}
 	}
 }
 .rossel .white{
@@ -464,8 +472,11 @@ left:100%;
 	}
 	&__image {
 		flex:1 1 40%;
+		border-radius:10px;
 	}
 	&__image img{
+		border:1px solid $lime;
+		border-radius:10px;
 		object-fit: cover;
 		width:100%;
 		height:360px;
@@ -531,7 +542,8 @@ th {
 	padding: 18px 9px;
 	color:white;
  background: -webkit-linear-gradient(0deg, #57a216,#a9e538);/* Chrome 10-25, Safari 5.1-6 */                         
- background: linear-gradient(0deg, #57a216,#a9e538);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             }
+ background: linear-gradient(0deg, #57a216,#a9e538);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+}
 tr {
 //	border: 1px solid white;
 }
@@ -555,7 +567,9 @@ text-align: left !important;
 	&__main {
 		margin-right:20px;
 	}
-	&__title {}
+	&__title {
+		color:$lime;
+	}
 	&__list {
 		margin-top:30px;
 	}
@@ -575,9 +589,77 @@ text-align: left !important;
 }
 // reduct end
 // garant
-
-
-
+.garant {
+	margin:120px 0px;
+	&__title {
+		margin-bottom:0px;
+	}
+	&__main {
+		display:flex;
+	}
+	&__image {
+		flex:1 1 40%;
+		& img{
+			width:100%;
+			height:100%;
+			object-fit:cover;
+		}
+	}
+	&__garant {	
+		z-index:2;
+		max-width:100%;
+		font-size: 20px;
+		color:white;
+		font-weight: bold;
+		background: -webkit-linear-gradient(0deg, #57a216,#a9e538);/* Chrome 10-25, Safari 5.1-6 */                         
+		background: linear-gradient(0deg, #57a216,#a9e538);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                            
+		padding:10px;
+		text-align: center;
+		transform:rotate(-25deg);
+		border-radius:15px;
+	}
+	&__circle{
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		background: -webkit-linear-gradient(0deg, #57a216,#a9e538);/* Chrome 10-25, Safari 5.1-6 */                         
+		background: linear-gradient(0deg, #57a216,#a9e538);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                            
+		width:170px;
+		height:170px;
+		border-radius:50%;
+		position: absolute;
+		left:8%;
+		top:6570px;
+		&_white{
+			display:flex;
+			align-items: center;
+			justify-content: center;
+			background:white;
+			border-radius:50%;
+			width:120px;
+			height:120px;
+		}
+	}
+	&__textblock {
+		margin-top:15%;
+		flex: 1 1 60%;
+	}
+	&__description {
+		text-align: left;
+	}
+	&__example {
+		margin-top:20px;
+	}
+	&__reason {
+		margin-top:20px;
+	}
+	&__except {
+		margin-top:20px;
+	}
+}
+.garant .five__problem__horizontal{
+	margin-top:20px;
+}
 
 // garant end
 // raps
@@ -648,7 +730,74 @@ text-align: left !important;
 // raps end
 // comps
 
+.swiper .swiper-pagination {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   padding: 0 10px;
+   bottom: 40px
+}
 
+.swiper .swiper-pagination-bullet {
+   position: relative;
+   width: 100%;
+   height: 3px;
+   border-radius: 8px;
+   background: 0 0;
+   opacity: 1
+}
+
+.swiper .swiper-pagination-bullet::after {
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   display: block;
+   width: 100%;
+   height: 1px;
+   background: rgba(255, 255, 255, .25);
+   border-radius: 8px;
+   -webkit-transition: background .3s;
+   -o-transition: background .3s;
+   transition: background .3s
+}
+
+.swiper .swiper-pagination-bullet-active::after {
+   height: 3px;
+   background: $lime;
+}
+.partners-logo .swiper {
+   margin-top: 50px;
+   padding: 50px 75px;
+}
+
+.partners-logo__item {
+   width: 200px;
+   height: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.partners-logo__img {
+   border-radius: 10%;
+   overflow: hidden;
+
+}
+.partners-logo__img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
 
 // comps end
 /*footer*/

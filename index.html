@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
 	<title> Прз рапсовые столы </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -172,8 +174,8 @@
 						<span class="bold big lime">Российский сельхозник </span>– особый тип человека. Мы с вами родом из советского прошлого и купив технику, забываем про ее обслуживание. Мы еще помним о не убиваемых «москвичах», «волгах» и «победах». Мы тоже решили, что наши рапсовые столы будут требовать лишь минимального ухода и работать безукоризненно.  
 
 					</div>
-					<div class="rossel__image white">
-						<img src="" alt="">
+					<div class="rossel__image">
+						<img src="img/lada.jpg" alt="">
 					</div>
 				</div>
 			</div>
@@ -372,7 +374,29 @@
 	<!-- garant -->
 	<section class="garant">
 		<div class="container">
-			
+			<div class="title garant__title">
+				Почему мы даем 2-х годичную гарантию на наши рапсовые столы?
+			</div>
+			<div class="garant__main">
+				<div class="garant__image">
+					<img src="img/raps.png" alt="">
+					<div class="garant__circle">
+						<div class="garant__circle_white">
+					<div class="garant__garant">&#10003 2 года гарантия</div>
+					</div>
+					</div>
+				</div>
+				<div class="garant__textblock">
+					<div class="description garant__description">
+						Уже второй раз за последние 2 месяца мы слышим от новых клиентов историю о бракованых рапсовых столах, которые им продали российские поставщики.  
+						<div class="five__problem__horizontal"><div class="circle"></div> </div>
+<div class="garant__example"><span class="lime">Например</span>, недавно торгующая организация вернула поставщику полтора десятка бракованых рапсовых столов. </div>
+<div class="garant__reason">Причина проста – ошибки и недочеты на производстве. </div>
+<div class="garant__except">У нас исключены недочеты на производстве, и поэтому мы вам даем <span class="lime">гарантию 2 года</span>.</div> 
+
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -409,6 +433,43 @@
 		</div>
 </section>
 	<!-- raps end -->
+	<!-- comps -->
+	<section class="comps">
+		<div class="container">
+			<div class="title comps__title">
+				Разрабатываем рапсовые столы для любых производителей жаток и комбайнов
+			</div>
+			<div class="comps__main">
+				        <div class="partners-logo">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper partners-logo__item">
+                <div class="partners-logo__img swiper-slide">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Claas_Logo.svg" alt="Лого партнеров">
+                </div>
+                <div class="partners-logo__img swiper-slide">
+                  <img src="https://getlogo.net/wp-content/uploads/2020/06/case-ih-agriculture-logo-vector.png" alt="Лого партнеров">
+                </div>
+                <div class="partners-logo__img swiper-slide">
+                  <img src="https://upload.wikimedia.org/wikipedia/ru/c/cf/John_Deere_logo.svg" alt="Лого партнеров">
+                </div>
+                <div class="partners-logo__img swiper-slide">
+                  <img src="https://www.newholland.com/PublishingImages/Landing/btn_agriculture.png" alt="Лого партнеров">
+                </div>
+                <div class="partners-logo__img swiper-slide">
+                  <img src="https://ufa-kinder.ru/upload/iblock/fe8/10np8vkw0jt8pphwpxqn9mu7orihfcd0.jpg" alt="Лого партнеров">
+                </div>
+                <div class="partners-logo__img swiper-slide">
+                  <img src="https://st1.prosto.im/cache/st1/1/0/6/2/106201/106201.jpg" alt="Лого партнеров">
+                </div>
+              </div>
+              <div class="swiper-pagination productSlider-pagination"></div>
+            </div>
+          </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- comps end -->
 			</main>
 		<footer class="foot">
 			<div class="container">
@@ -645,6 +706,52 @@ function myFunction() {
     more1.className = classNameTwo;
     return false;
 };
+	</script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script>
+window.addEventListener("load", function () {
+  const mainSlider = new Swiper(".mainSlider", {
+    draggable: true,
+    centeredSlides: true,
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 1.1,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 1,
+      },
+    },
+  });
+
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView:1,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".productSlider-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 5,
+      },
+    },
+  });
+});
+
 	</script>
 </body>
 </html>
