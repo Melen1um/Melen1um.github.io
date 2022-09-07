@@ -5,7 +5,7 @@ html{
 	scroll-behavior: smooth;
 }
 body{
-	font-family: 'Montserrat';
+	font-family: 'Arial';
 }
 .bold{
 	font-weight: bold !important;
@@ -519,7 +519,6 @@ left:100%;
 .omut {
 	margin:120px 0px;
 	&__title {
-		background:$lime;
 		border-radius:30px;
 		padding:30px;
 		margin:0 8%;
@@ -547,6 +546,9 @@ th {
 	color:white;
  background: -webkit-linear-gradient(0deg, #57a216,#a9e538);/* Chrome 10-25, Safari 5.1-6 */                         
  background: linear-gradient(0deg, #57a216,#a9e538);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+}
+th:first-child{
+	background:none;
 }
 tr {
 //	border: 1px solid white;
