@@ -261,6 +261,7 @@ width:100%;
 }
 .why__block{
 	margin-bottom: 70px;
+
 }
 .why__block:last-child{
 	margin-bottom: 30px;
@@ -279,6 +280,9 @@ width:100%;
 	background: white;
 	color: black;
 	border-radius:20px;
+-webkit-box-shadow: -9px 9px 8px 0px rgba(103, 103, 103, 0.6);
+-moz-box-shadow: -9px 9px 8px 0px rgba(103, 103, 103, 0.6);
+box-shadow: -9px 9px 8px 0px rgba(103, 103, 103, 0.6);
 }
 .why__bigtext{
 	font-size: 64px;
@@ -591,6 +595,7 @@ text-align: left !important;
 // garant
 .garant {
 	margin:120px 0px;
+	margin-bottom:0px;
 	&__title {
 		margin-bottom:0px;
 	}
@@ -599,6 +604,8 @@ text-align: left !important;
 	}
 	&__image {
 		flex:1 1 40%;
+		display:flex;
+		flex-direction: column;
 		& img{
 			width:100%;
 			height:100%;
@@ -625,11 +632,11 @@ text-align: left !important;
 		background: -webkit-linear-gradient(0deg, #57a216,#a9e538);/* Chrome 10-25, Safari 5.1-6 */                         
 		background: linear-gradient(0deg, #57a216,#a9e538);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                            
 		width:170px;
-		height:170px;
+		min-height:170px;
 		border-radius:50%;
-		position: absolute;
+		position: relative;
 		left:8%;
-		top:6570px;
+		top:-70%;
 		&_white{
 			display:flex;
 			align-items: center;
@@ -665,6 +672,7 @@ text-align: left !important;
 // raps
 .raps {
 	margin: 120px 0px;
+	margin-top:0px;
 	&__num{
 		display:flex;
 	}
