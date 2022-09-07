@@ -5,7 +5,7 @@ html{
 	scroll-behavior: smooth;
 }
 body{
-	font-family: 'Arial';
+	font-family: 'Montserrat';
 }
 .bold{
 	font-weight: bold !important;
@@ -550,6 +550,107 @@ text-align: left !important;
 	background:#242426 !important;
 }
 // omut end
+// reduct 
+.reduct {
+	&__main {
+		margin-right:20px;
+	}
+	&__title {}
+	&__list {
+		margin-top:30px;
+	}
+	&__punct {
+		margin-top:10px;
+		font-size: 22px;
+	}
+	&__image {}
+}
+.reduct .container{
+	display:flex;
+}
+.reduct__punct:before{
+	 content: '\2726';
+	 color:$lime;
+    margin: 0 10px;
+}
+// reduct end
+// garant
+
+
+
+
+// garant end
+// raps
+.raps {
+	margin: 120px 0px;
+	&__num{
+		display:flex;
+	}
+	&__percent{
+		font-size: 1.5em;
+		color:$lime;
+	}
+}
+.advert__main{
+	padding: 10px;
+}
+.advert__block{
+	display: flex;
+	margin-bottom: 20px;
+}
+.advert__text{
+	font-size: 24px;
+	line-height: 30px;
+}
+.advert__textimage{
+	height: 430px;
+	flex: 1 1 46%;
+	border-radius: 20px;
+	border: 1px solid #6dce0e;
+}
+.advert__textimage img{
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+	object-fit: cover;
+}
+.advert__texts{
+	flex: 1 1 50%;
+	padding: 0 20px;
+}
+.advert__button{
+	margin-top:30px;
+	text-align: center;
+}
+.advert__number {
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	}
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	  /* 1 */
+	display: table;
+	  /* 2 */
+}
+.clearfix:after {
+  	clear: both;
+}
+.viz {
+	opacity: 1;
+	transition: 1s;
+}
+.bl {
+	  margin: 0 0px;
+	  padding: 20px;
+}
+// raps end
+// comps
+
+
+
+// comps end
 /*footer*/
 .foot{
 	border-top: 1px solid #6dce0e;
