@@ -628,39 +628,16 @@ text-align: left !important;
 			object-fit:cover;
 		}
 	}
-	&__garant {	
-		z-index:2;
-		max-width:100%;
-		font-size: 20px;
-		color:white;
-		font-weight: bold;
-		background: -webkit-linear-gradient(0deg, #57a216,#a9e538);/* Chrome 10-25, Safari 5.1-6 */                         
-		background: linear-gradient(0deg, #57a216,#a9e538);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                            
-		padding:10px;
-		text-align: center;
-		transform:rotate(-25deg);
-		border-radius:15px;
-	}
 	&__circle{
-		display:flex;
-		align-items: center;
-		justify-content: center;
-		background: -webkit-linear-gradient(0deg, #57a216,#a9e538);/* Chrome 10-25, Safari 5.1-6 */                         
-		background: linear-gradient(0deg, #57a216,#a9e538);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                            
-		width:170px;
-		min-height:170px;
-		border-radius:50%;
 		position: relative;
 		left:8%;
 		top:-70%;
-		&_white{
-			display:flex;
-			align-items: center;
-			justify-content: center;
-			background:white;
-			border-radius:50%;
-			width:120px;
-			height:120px;
+		width:150px;
+		height:150px;
+		& img{
+			width:100%;
+			height:100%;
+			object-fit: cover;
 		}
 	}
 	&__textblock {
@@ -793,7 +770,7 @@ text-align: left !important;
 	}
 }
 
-.swiper .swiper-pagination {
+/*.swiper .swiper-pagination {
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
@@ -860,7 +837,7 @@ text-align: left !important;
    width: 100%;
    height: 100%;
    object-fit: cover;
-}
+}*/
 
 // comps end
 // eldar

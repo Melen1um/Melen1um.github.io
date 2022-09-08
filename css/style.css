@@ -833,57 +833,18 @@ td {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.garant__garant {
-  z-index: 2;
-  max-width: 100%;
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left bottom, left top, from(#57a216), to(#a9e538));
-  background: linear-gradient(0deg, #57a216, #a9e538);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding: 10px;
-  text-align: center;
-  -webkit-transform: rotate(-25deg);
-          transform: rotate(-25deg);
-  border-radius: 15px;
-}
 .garant__circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left bottom, left top, from(#57a216), to(#a9e538));
-  background: linear-gradient(0deg, #57a216, #a9e538);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  width: 170px;
-  min-height: 170px;
-  border-radius: 50%;
   position: relative;
   left: 8%;
   top: -70%;
+  width: 150px;
+  height: 150px;
 }
-.garant__circle_white {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: white;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
+.garant__circle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .garant__textblock {
   margin-top: 15%;
@@ -1052,81 +1013,74 @@ td {
   color: black;
 }
 
-.swiper .swiper-pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 0 10px;
-  bottom: 40px;
+/*.swiper .swiper-pagination {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+   padding: 0 10px;
+   bottom: 40px
 }
 
 .swiper .swiper-pagination-bullet {
-  position: relative;
-  width: 100%;
-  height: 3px;
-  border-radius: 8px;
-  background: 0 0;
-  opacity: 1;
+   position: relative;
+   width: 100%;
+   height: 3px;
+   border-radius: 8px;
+   background: 0 0;
+   opacity: 1
 }
 
 .swiper .swiper-pagination-bullet::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.25);
-  border-radius: 8px;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   display: block;
+   width: 100%;
+   height: 1px;
+   background: rgba(255, 255, 255, .25);
+   border-radius: 8px;
+   -webkit-transition: background .3s;
+   -o-transition: background .3s;
+   transition: background .3s
 }
 
 .swiper .swiper-pagination-bullet-active::after {
-  height: 3px;
-  background: #6dce0e;
+   height: 3px;
+   background: $lime;
 }
-
 .partners-logo .swiper {
-  margin-top: 50px;
-  padding: 50px 75px;
+   margin-top: 50px;
+   padding: 50px 75px;
 }
 
 .partners-logo__item {
-  width: 200px;
-  height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+   width: 200px;
+   height: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
 
 .partners-logo__img {
-  border-radius: 10%;
-  overflow: hidden;
-}
+   border-radius: 10%;
+   overflow: hidden;
 
+}
 .partners-logo__img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}*/
 .eldar {
   margin: 120px 0px;
   margin-bottom: 0px;
