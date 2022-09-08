@@ -334,6 +334,35 @@
 		</div>
 	</section>
 	<!-- omut end -->
+			<!-- formblock -->
+	<section class="formblock">
+		<div class="container">
+			<div class="formblock__title">
+				Какую задачу вы хотите решить?
+			</div>
+			<div class="formblock__form">
+					 <form action="" class="formblock__block" method="post">
+					 	<div class="formblock__image">
+					 	<img src="https://prom-holding.com/wp-content/uploads/2022/08/bread.png" alt="">
+					 	</div>
+					 	<div class="formblock__punct">
+					 	<p class="formblock__label">Ваш email</p>
+				 		<input type="email" class="formblock__input" placeholder="E-mail" name="mail" required>
+				 		</div>
+				 		<div class="formblock__punct">
+				 		<p class="formblock__label">Ваше имя</p>
+				    <input type="text"  class="formblock__input" placeholder="Имя" name="first_name" required>
+				    </div>
+				    <div class="formblock__punct">
+				    <p class="formblock__label">Ваш телефон</p>
+					<input type="tel" class="formblock__input" placeholder="Номер телефона" name="number" required>
+			         </div>
+				    <button type="submit" class="formblock__btn" name="done">Получить консультацию</button>
+				  </form>
+			</div>
+		</div>
+		</section>
+		<!-- formblock end -->
 	<!-- reduct -->
 	<section class="reduct">
 		<div class="container">
@@ -428,6 +457,25 @@
 			<div class="title comps__title">
 				Разрабатываем рапсовые столы для любых производителей жаток и комбайнов
 			</div>
+			<div class="comps__colmob">
+						<div class="comps__logo">
+							    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Claas_Logo.svg" alt="Лого партнеров">
+						</div>
+						<div class="comps__logo">
+							<img src="https://getlogo.net/wp-content/uploads/2020/06/case-ih-agriculture-logo-vector.png" alt="Лого партнеров">
+						</div>
+											            <div class="comps__logo">
+   					 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/%D0%A0%D0%BE%D1%81%D1%82%D1%81%D0%B5%D0%BB%D1%8C%D0%BC%D0%B0%D1%88.png" alt="Лого партнеров" >
+            </div>
+						<div class="comps__logo">
+              <img src="https://ufa-kinder.ru/upload/iblock/fe8/10np8vkw0jt8pphwpxqn9mu7orihfcd0.jpg" alt="Лого партнеров">			</div>
+					<div class="comps__logo">
+              <img src="https://upload.wikimedia.org/wikipedia/ru/c/cf/John_Deere_logo.svg" alt="Лого партнеров">							
+						</div>
+						<div class="comps__logo">
+              <img src="https://www.newholland.com/PublishingImages/Landing/btn_agriculture.png" alt="Лого партнеров">		
+						</div>
+					</div>
 			<div class="comps__main">
 				<div class="comps__struct">
 					<div class="comps__col">
@@ -437,27 +485,23 @@
 						<div class="comps__logo">
 							<img src="https://getlogo.net/wp-content/uploads/2020/06/case-ih-agriculture-logo-vector.png" alt="Лого партнеров">
 						</div>
+					</div>
+					<div class="comps__col">
+						            <div class="comps__logo">
+   					 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/%D0%A0%D0%BE%D1%81%D1%82%D1%81%D0%B5%D0%BB%D1%8C%D0%BC%D0%B0%D1%88.png" alt="Лого партнеров" >
+            </div>
+						<div class="comps__logo">
+              <img src="https://ufa-kinder.ru/upload/iblock/fe8/10np8vkw0jt8pphwpxqn9mu7orihfcd0.jpg" alt="Лого партнеров">			</div>
+
+					</div>
+					<div class="comps__col">
 						<div class="comps__logo">
               <img src="https://upload.wikimedia.org/wikipedia/ru/c/cf/John_Deere_logo.svg" alt="Лого партнеров">							
 						</div>
 						<div class="comps__logo">
               <img src="https://www.newholland.com/PublishingImages/Landing/btn_agriculture.png" alt="Лого партнеров">		
 						</div>
-					</div>
-					<div class="comps__col">
-						<div class="comps__logo">
-              <img src="https://ufa-kinder.ru/upload/iblock/fe8/10np8vkw0jt8pphwpxqn9mu7orihfcd0.jpg" alt="Лого партнеров">			</div>
-            <div class="comps__logo">
-   					 <img src="https://st1.prosto.im/cache/st1/1/0/6/2/106201/106201.jpg" alt="Лого партнеров">
-            </div>
-            <div class="comps__logo white__circle">Логотип</div>
-            <div class="comps__logo white__circle">Логотип</div>
-					</div>
-					<div class="comps__col">
-            <div class="comps__logo white__circle">Логотип</div>
-            <div class="comps__logo white__circle">Логотип</div>
-            <div class="comps__logo white__circle">Логотип</div>
-            <div class="comps__logo white__circle">Логотип</div>            		
+        		
 					</div>
 				</div>
 			</div>
@@ -722,6 +766,7 @@ $(function() {
  $("#go-top").scrollToTop();
 });
 
+if(location.hash) history.replaceState({}, document.title, location.href.split('#')[0]);
 /* scroll to top end */
 </script>
 <script>
