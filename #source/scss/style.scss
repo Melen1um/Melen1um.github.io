@@ -575,6 +575,7 @@ text-align: left !important;
 // reduct 
 .reduct {
 	&__main {
+		flex: 1 1 50%;
 		margin-right:20px;
 	}
 	&__title {
@@ -587,7 +588,16 @@ text-align: left !important;
 		margin-top:10px;
 		font-size: 22px;
 	}
-	&__image {}
+	&__image {
+		flex:1 1 50%;
+		& img{
+			width:100%;
+			height:100%;
+			object-fit: cover;
+			border-radius:10px;
+			border:1px solid $lime;
+		}
+	}
 }
 .reduct .container{
 	display:flex;
@@ -1816,6 +1826,7 @@ text-align: left !important;
 		font-size: 18px;
 	}
 	&__image {
+		margin:0 10px;
 		}
 }
 .reduct .container{
@@ -1906,13 +1917,13 @@ text-align: left !important;
 // garant end
 // raps
 .raps {
-	margin: 120px 0px;
+	margin: 100px 0px;
 	margin-top:0px;
 	&__num{
 		display:flex;
 	}
 	&__percent{
-		font-size: 1.5em;
+		font-size: 1.1em;
 		color:$lime;
 	}
 }
@@ -1921,11 +1932,12 @@ text-align: left !important;
 }
 .advert__block{
 	display: flex;
+	flex-direction: column-reverse;
 	margin-bottom: 20px;
 }
 .advert__text{
-	font-size: 24px;
-	line-height: 30px;
+	font-size: 22px;
+	line-height: 26px;
 }
 .advert__textimage{
 	height: 430px;
@@ -1944,11 +1956,11 @@ text-align: left !important;
 	padding: 0 20px;
 }
 .advert__button{
-	margin-top:30px;
+	margin-top:20px;
 	text-align: center;
 }
 .advert__number {
-	font-size: 1.8em;
+	font-size: 1.4em;
 	font-weight: bold;
 	margin-bottom: 20px;
 	}
@@ -1968,14 +1980,14 @@ text-align: left !important;
 }
 .bl {
 	  margin: 0 0px;
-	  padding: 20px;
+	  padding: 20px 0px;
 }
 // raps end
 // comps
 .comps {
-	margin:120px 0px;
+	margin:100px 0px;
 	&__title {
-		margin-bottom:30px;
+		margin-bottom:20px;
 	}
 	&__main {}
 	&__struct {
@@ -1988,7 +2000,7 @@ text-align: left !important;
 		justify-content: space-between;
 	}
 	&__logo {
-	width:174px;
+	width:110px;
    border-radius: 10%;
    margin-bottom: 25px;
 	}
@@ -2001,8 +2013,8 @@ text-align: left !important;
 }
 .white {
 	&__circle {
-		width:174px;
-		height:80px;
+		width:110px;
+		height:50px;
 		border-radius:10px;
 		background:white;
 		display:flex;
@@ -2011,94 +2023,24 @@ text-align: left !important;
 		color:black;
 	}
 }
-
-.swiper .swiper-pagination {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-align: center;
-   -ms-flex-align: center;
-   align-items: center;
-   -webkit-box-pack: center;
-   -ms-flex-pack: center;
-   justify-content: center;
-   padding: 0 10px;
-   bottom: 40px
-}
-
-.swiper .swiper-pagination-bullet {
-   position: relative;
-   width: 100%;
-   height: 3px;
-   border-radius: 8px;
-   background: 0 0;
-   opacity: 1
-}
-
-.swiper .swiper-pagination-bullet::after {
-   content: "";
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   -webkit-transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
-   transform: translate(-50%, -50%);
-   display: block;
-   width: 100%;
-   height: 1px;
-   background: rgba(255, 255, 255, .25);
-   border-radius: 8px;
-   -webkit-transition: background .3s;
-   -o-transition: background .3s;
-   transition: background .3s
-}
-
-.swiper .swiper-pagination-bullet-active::after {
-   height: 3px;
-   background: $lime;
-}
-.partners-logo .swiper {
-   margin-top: 50px;
-   padding: 50px 75px;
-}
-
-.partners-logo__item {
-   width: 200px;
-   height: 200px;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-}
-
-.partners-logo__img {
-   border-radius: 10%;
-   overflow: hidden;
-
-}
-.partners-logo__img img {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-}
-
 // comps end
 // eldar
 .eldar {
-	margin:120px 0px;
+	margin:100px 0px;
 	margin-bottom:0px;
 	&__main {
 		display:flex;
+		flex-direction:column-reverse;
 	}
 	&__textblock {
-		flex: 1 1 50%;
 		margin-right:20px;
-		margin-top:10%;
+		margin-top:5%;
 		margin-bottom:5%;
-		font-size: 26px;
+		font-size: 22px;
 
 	}
 	&__image {
-		flex: 1 1 47%;
+		margin:0 10px;
 		border-radius:10px;
 		border:1px solid $lime;
 		& img{
@@ -2119,7 +2061,7 @@ text-align: left !important;
 	color: white;
 	flex: 0 1 auto;
 	padding: 30px 0px 10px 0px;
-	margin-top: 60px;
+	margin-top: 20px;
 	font-size: 18px;
 }
 .foot .number{
