@@ -697,8 +697,8 @@ body {
           flex: 1 1 60%;
 }
 .exp__block {
-  padding: 15px 25px;
-  padding-bottom: 0px;
+  padding: 21px 25px;
+  padding-bottom: 6px;
   border: 1px solid #6dce0e;
   border-radius: 20px;
   margin-bottom: 32px;
@@ -715,6 +715,7 @@ body {
   color: white;
   padding: 17px 15px;
   width: 65px;
+  margin-top: -15px;
   margin-bottom: -20px;
   font-weight: bold;
 }
