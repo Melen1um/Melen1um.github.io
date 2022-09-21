@@ -917,7 +917,7 @@ td {
 }
 
 .raps {
-  margin: 120px 0px;
+  margin: 100px 0px;
   margin-top: 0px;
 }
 .raps__num {
@@ -931,7 +931,11 @@ td {
 }
 
 .advert__main {
-  padding: 10px;
+  background: url("../img/clientsback.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 10px;
+  border-radius: 20px;
 }
 
 .advert__block {
@@ -947,12 +951,9 @@ td {
 }
 
 .advert__textimage {
-  height: 430px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 46%;
           flex: 1 1 46%;
-  border-radius: 20px;
-  border: 1px solid #6dce0e;
 }
 
 .advert__textimage img {

@@ -706,7 +706,7 @@ text-align: left !important;
 // garant end
 // raps
 .raps {
-	margin: 120px 0px;
+	margin: 100px 0px;
 	margin-top:0px;
 	&__num{
 		display:flex;
@@ -717,7 +717,11 @@ text-align: left !important;
 	}
 }
 .advert__main{
-	padding: 10px;
+	background:url('../img/clientsback.jpg');
+	background-size:cover;
+	background-position: center;
+	padding: 60px 10px;
+	border-radius:20px;
 }
 .advert__block{
 	display: flex;
@@ -728,10 +732,7 @@ text-align: left !important;
 	line-height: 30px;
 }
 .advert__textimage{
-	height: 430px;
 	flex: 1 1 46%;
-	border-radius: 20px;
-	border: 1px solid #6dce0e;
 }
 .advert__textimage img{
 	width: 100%;
