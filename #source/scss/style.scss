@@ -499,7 +499,7 @@ left:100%;
 		border-radius:30%;
 	}
 	&__image {
-		flex:1 1 40%;
+		flex:1 1 50%;
 		border-radius:10px;
 	}
 	&__image img{
@@ -512,7 +512,16 @@ left:100%;
 	}
 	&__blocks {
 		margin-left:15px;
-		flex: 1 1 60%;
+		flex: 1 1 50%;
+				& img{
+			border:1px solid $lime;
+		border-radius:10px;
+		object-fit: cover;
+		width:100%;
+		height:500px;
+		margin-top:10px;
+		margin-bottom:30px;
+		}
 	}
 	&__block {
 		padding:21px 25px;
@@ -520,7 +529,6 @@ left:100%;
 		border:1px solid $lime;
 		border-radius:20px;
 		margin-bottom:32px;
-
 		text-align: left;
 		background:white;
 		color:black;
@@ -539,7 +547,18 @@ left:100%;
 		font-weight: bold;
 	}
 }
-
+.left__yes{
+		position:relative;
+		left:-13%;
+		top:0px;
+		background:$lime;
+		color:white;
+		padding:17px 15px;
+		width:65px;
+		margin-top:-15px;
+		margin-bottom:-20px;
+		font-weight: bold;
+}
 // exp end
 // omut
 .omut {
@@ -2354,6 +2373,10 @@ box-shadow: -9px 9px 8px 0px rgba(103, 103, 103, 0.6);
 		}
 	}
 }
+.five__problem__image img {
+    width: 100%;
+    height: 300px;
+ }
 .circle{
 	height:15px;
 	width:15px;
@@ -2412,6 +2435,9 @@ left:100%;
 	}
 	&__main {
 		display:flex;
+	}
+	&__main:last-child{
+			background:none;
 	}
 	&__image {
 		display:none;
@@ -2528,6 +2554,9 @@ text-align: left !important;
 	}
 	&__image {
 		margin:0 10px;
+		& img {
+			height:400px;
+		}
 		}
 }
 .reduct .container{
@@ -2606,14 +2635,14 @@ text-align: left !important;
 	line-height: 26px;
 }
 .advert__textimage{
-	height: 430px;
+	height: 400px;
 	flex: 1 1 46%;
 	border-radius: 20px;
 	border: 1px solid #6dce0e;
 }
 .advert__textimage img{
 	width: 100%;
-	height: 100%;
+	height: 400px;
 	border-radius: 20px;
 	object-fit: cover;
 }
