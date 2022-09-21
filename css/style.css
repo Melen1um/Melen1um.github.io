@@ -247,8 +247,8 @@ body {
 
 .head__navmenu {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 60%;
-          flex: 0 1 60%;
+      -ms-flex: 0 1 80%;
+          flex: 0 1 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,11 +381,11 @@ body {
 
 /* Header styles end */
 .first__block {
-  background: url("../img/rapsback.jpg");
+  background: url("../img/bannerBlock.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0px;
+  padding: 120px 0px;
 }
 .first__block__title {
   margin-top: 40px;
@@ -795,6 +795,7 @@ td {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+  max-height: 400px;
 }
 .reduct__image img {
   width: 100%;
@@ -1174,7 +1175,6 @@ td {
 }
 
 .foot__info {
-  text-align: justify;
   line-height: 30px;
 }
 
@@ -2338,7 +2338,6 @@ td {
   }
 
   .foot__info {
-    text-align: justify;
     line-height: 30px;
   }
 
@@ -3353,7 +3352,6 @@ td {
   }
 
   .foot__info {
-    text-align: justify;
     line-height: 30px;
   }
 
