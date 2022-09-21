@@ -1185,6 +1185,8 @@ td {
   max-height: 450px;
 }
 .bonus__image img {
+  border-radius: 15px;
+  border: 1px solid #6dce0e;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
