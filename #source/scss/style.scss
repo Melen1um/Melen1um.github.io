@@ -484,11 +484,19 @@ left:100%;
 // facts end
 // exp
 .exp {
+
 	&__title {
 		margin-bottom:35px;
 	}
 	&__main {
 		display:flex;
+	}
+	&__main:last-child {
+		background:url('../img/transback.png');
+		background-size:contain;
+		background-repeat: no-repeat;
+		display:flex;
+		border-radius:30%;
 	}
 	&__image {
 		flex:1 1 40%;
@@ -512,7 +520,7 @@ left:100%;
 		border:1px solid $lime;
 		border-radius:20px;
 		margin-bottom:32px;
-		
+
 		text-align: left;
 		background:white;
 		color:black;
@@ -1008,6 +1016,16 @@ text-align: left !important;
 	margin-right: 10px;
 	padding-left: 10px;
 	background-repeat: no-repeat
+}
+
+.nurse__image{
+	flex:1 1 50%;
+
+}
+.nurse__image img{
+	width:100%;
+	height:100%;
+	object-fit: cover;
 }
 /* footer end */
 /* callback */
