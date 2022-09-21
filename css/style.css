@@ -668,6 +668,35 @@ body {
   padding-top: 30px;
 }
 
+.xarak {
+  margin: 120px 0px;
+}
+.xarak__title {
+  margin-bottom: 40px;
+}
+.xarak__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.xarak__image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+}
+.xarak__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.xarak .omut__table {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  margin-left: 20px;
+}
+
 .exp__title {
   margin-bottom: 35px;
 }
