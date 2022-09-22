@@ -2264,23 +2264,6 @@ td {
     line-height: 30px;
   }
 
-  .advert__textimage {
-    height: 430px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 46%;
-            flex: 1 1 46%;
-    border-radius: 20px;
-    border: 1px solid #6dce0e;
-  }
-
-  .advert__textimage img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-
   .advert__texts {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50%;
@@ -2983,6 +2966,25 @@ td {
   }
 
   /* formblock end */
+  .xarak__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .xarak__image {
+    max-height: 400px;
+    margin-bottom: 25px;
+  }
+  .xarak__image img {
+    max-height: 400px;
+  }
+
+  .xarak .omut__table {
+    margin-left: 0px;
+  }
+
   /* rossel */
   .rossel {
     margin: 100px 0px;
@@ -3371,23 +3373,6 @@ td {
     line-height: 26px;
   }
 
-  .advert__textimage {
-    height: 400px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 46%;
-            flex: 1 1 46%;
-    border-radius: 20px;
-    border: 1px solid #6dce0e;
-  }
-
-  .advert__textimage img {
-    width: 100%;
-    height: 400px;
-    border-radius: 20px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-
   .advert__texts {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50%;
@@ -3489,6 +3474,26 @@ td {
         -ms-flex-pack: center;
             justify-content: center;
     color: black;
+  }
+
+  .bonus__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .bonus__image img {
+    max-height: 300px;
+  }
+
+  .bonus__image {
+    margin: 0px 10px;
+  }
+
+  .bonus__second {
+    margin-left: 0px;
+    margin: 0px 5px;
   }
 
   .eldar {
