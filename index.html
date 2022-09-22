@@ -301,50 +301,50 @@
 
 				</div>
 				<div class="xarak__main">
-					<div class="xarak__image">
-						<img src="img/blocksecond.jpeg" alt="">
+					<div class="xarak__image" id="xarak__img">
+						<img src="img/blocksecond.jpeg" alt="" id="xarak__images">
 					</div>
 						<div class="omut__table">
 				<table>
-					<tr class="mainwhite">
+					<tr class="mainwhite"  id="blockone">
 						<td class="alignleft lighten">	Работает при любых погодных условиях
 
 </td>
 					</tr>
-					<tr>
+					<tr  id="blocktwo">
 						<td class="alignleft lighten">	Быстрая установка на жатку (30 минут) 
 </td>
 					</tr>
-					<tr class="mainwhite">
-						<td class="alignleft lighten">Малая длина порога между режущим аппаратом и настилом позволяет собирать изреженный и низкорослый рапс, а также карликовые сорта
+					<tr class="mainwhite" id="blockthree">
+						<td class="alignleft lighten" >Малая длина порога между режущим аппаратом и настилом позволяет собирать изреженный и низкорослый рапс, а также карликовые сорта
 </td>
 					</tr>
-					<tr>
-						<td class="alignleft lighten">Рифленая конструкция стола дает: <br>
+					<tr id="blockfour">
+						<td class="alignleft lighten" >Рифленая конструкция стола дает: <br>
 							1.	Жесткость и отсутствие прогибания стола вниз даже при ширине захвата 10,7 метров! <br>
 							2.	Препятствует  выпаданию осыпавшихся зерен из стола<br>
 							3.	Позволяет работать на крутых склонах без скатывания зерен к боковинам
 </td>
 					</tr>
-						<tr class="mainwhite">
+						<tr class="mainwhite"  id="blockfive">
 						<td class="alignleft lighten">	Грамотная конструкция рабочих органов исключает вибрацию всего механизма, что снижает нагрузку на жатку (не снижается ресурс работы жатки и комбайна);
 
 </td>
 					</tr>
-						<tr>
+						<tr  id="blocksix">
 						<td class="alignleft lighten">	Cпециальные буртики удерживают зерна и не дают просыпаться назад. Уменьшают потери
 </td>
 					</tr>
-						<tr class="mainwhite">
+						<tr class="mainwhite" id="blockseven">
 						<td class="alignleft lighten">	Отсутствия провисания стола создает плавность хода ножей, а значит и качественный срез
 
 </td>
 					</tr>
-						<tr>
+						<tr id="blockeight">
 						<td class="alignleft lighten">	Двойной ряд ножей обеспечивает высокую скорость среза
 </td>
 					</tr>
-							<tr class="mainwhite">
+							<tr class="mainwhite" id="blocknine">
 						<td class="alignleft lighten">	Упаковывается в защитный кожух для безопасной транспортировки
 
 </td>
@@ -993,6 +993,166 @@ window.addEventListener("load", function () {
   // вызываем функцию countdownTimer каждую секунду
   timerId = setInterval(countdownTimer, 1000);
 });
+	</script>
+	<script type="text/javascript">
+		let blockone = document.getElementById('blockone');
+		let blocktwo = document.getElementById('blocktwo');
+		let blockthree = document.getElementById('blockthree');
+		let blockfour = document.getElementById('blockfour');
+		let blockfive = document.getElementById('blockfive');
+		let blocksix = document.getElementById('blocksix');
+		let blockseven = document.getElementById('blockseven');
+		let blockeight = document.getElementById('blockeight');
+		let blocknine = document.getElementById('blocknine');
+		let blockimg = document.getElementById('xarak__img');
+	const delay = 5000;
+
+	let currentIndex = 0;
+	let secondIndex = 1;
+	const imgLinks = [
+    'img/bannerblock2.jpg',
+    'img/bannerblock3.jpg',
+    'img/bannerblock4.jpg',
+    'img/bannerblock5.jpg',
+    'img/bannerblock6.jpg',
+    'img/bannerblock7.jpg',
+    'img/bannerblock8.jpg',
+    'img/bannerblock9.jpg',
+    'img/blocksecond.jpeg'
+];
+	const blocks = [
+	blockone, blocktwo, blockthree, blockfour, blockfive, blocksix, blockseven, blockeight, blocknine];
+	blocks[0].style.backgroundColor="#6dce0e";
+    //	blockone.style.backgroundColor="#6dce0e";
+	var interv = setInterval(function() {
+    document.getElementById('xarak__images').src = imgLinks[currentIndex];
+    if(secondIndex>=0 && secondIndex<blocks.length){
+    blocks[secondIndex].style.backgroundColor="#6dce0e";}
+    if(secondIndex>0 && secondIndex<blocks.length){
+    blocks[secondIndex-1].style.removeProperty('background-color');
+  };
+
+    currentIndex++;
+    secondIndex++;
+    if(currentIndex >= imgLinks.length) {
+        currentIndex = 0;
+        secondIndex = 0;
+    };
+          if(secondIndex==0){  	
+      blocks[0].style.backgroundColor="#6dce0e";
+    	blocks[8].style.removeProperty('background-color');
+    	secondIndex++;
+    };
+}, delay);/*
+			blockone.addEventListener('click', function(){
+			blockimg.innerHTML = '<img src="img/blocksecond.jpeg" alt="" id="xarak__images">';
+			clearInterval(interv);
+		var interv = setInterval(function() {
+    document.getElementById('xarak__images').src = imgLinks[currentIndex];
+    currentIndex++;
+    if(currentIndex >= imgLinks.length) {
+        currentIndex = 0;
+    };
+}, delay);
+			interv;
+		});
+			blocktwo.addEventListener('click', function(){
+			blockimg.innerHTML = '<img src="img/bannerblock2.jpg"  alt="" id="xarak__images">';
+			clearInterval(interv);
+		var interv = setInterval(function() {
+    document.getElementById('xarak__images').src = imgLinks[currentIndex];
+    currentIndex++;
+    if(currentIndex >= imgLinks.length) {
+        currentIndex = 0;
+    };
+}, delay);
+			interv;
+		});
+			blockthree.addEventListener('click', function(){
+			blockimg.innerHTML = '<img src="img/bannerblock3.jpg" alt="" id="xarak__images">';
+			clearInterval(interv);
+		var interv = setInterval(function() {
+    document.getElementById('xarak__images').src = imgLinks[currentIndex];
+    currentIndex++;
+    if(currentIndex >= imgLinks.length) {
+        currentIndex = 0;
+    };
+}, delay);
+			interv;
+		});
+			blockfour.addEventListener('click', function(){
+			blockimg.innerHTML = '<img src="img/bannerblock4.jpg" alt="" id="xarak__images">';
+			clearInterval(interv);
+		var interv = setInterval(function() {
+    document.getElementById('xarak__images').src = imgLinks[currentIndex];
+    currentIndex++;
+    if(currentIndex >= imgLinks.length) {
+        currentIndex = 0;
+    };
+}, delay);
+			interv;
+		});
+			blockfive.addEventListener('click', function(){
+			blockimg.innerHTML = '<img src="img/bannerblock5.jpg" alt="" id="xarak__images">';
+			clearInterval(interv);
+		var interv = setInterval(function() {
+    document.getElementById('xarak__images').src = imgLinks[currentIndex];
+    currentIndex++;
+    if(currentIndex >= imgLinks.length) {
+        currentIndex = 0;
+    };
+}, delay);
+			interv;
+		});
+			blocksix.addEventListener('click', function(){
+			blockimg.innerHTML = '<img src="img/bannerblock6.jpg" alt="" id="xarak__images">';
+			clearInterval(interv);
+		var interv = setInterval(function() {
+    document.getElementById('xarak__images').src = imgLinks[currentIndex];
+    currentIndex++;
+    if(currentIndex >= imgLinks.length) {
+        currentIndex = 0;
+    };
+}, delay);
+			interv;
+		});
+			blockseven.addEventListener('click', function(){
+			blockimg.innerHTML = '<img src="img/bannerblock7.jpg" alt="" id="xarak__images">';
+			clearInterval(interv);
+		var interv = setInterval(function() {
+    document.getElementById('xarak__images').src = imgLinks[currentIndex];
+    currentIndex++;
+    if(currentIndex >= imgLinks.length) {
+        currentIndex = 0;
+    };
+}, delay);
+			interv;
+		});
+			blockeight.addEventListener('click', function(){
+			blockimg.innerHTML = '<img src="img/bannerblock8.jpg" alt="" id="xarak__images">';
+			clearInterval(interv);
+		var interv = setInterval(function() {
+    document.getElementById('xarak__images').src = imgLinks[currentIndex];
+    currentIndex++;
+    if(currentIndex >= imgLinks.length) {
+        currentIndex = 0;
+    };
+}, delay);
+			interv;
+		});
+			blocknine.addEventListener('click', function(){
+			blockimg.innerHTML = '<img src="img/bannerblock9.jpg" alt="" id="xarak__images">';
+			clearInterval(interv);
+		var interv = setInterval(function() {
+    document.getElementById('xarak__images').src = imgLinks[currentIndex];
+    currentIndex++;
+    if(currentIndex >= imgLinks.length) {
+        currentIndex = 0;
+    };
+}, delay);
+			interv;
+		});*/
+interv;
 	</script>
 </body>
 </html>
