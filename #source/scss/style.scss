@@ -495,7 +495,7 @@ left:100%;
 		display:flex;
 	}
 	&__image {
-		max-height:650px;
+		max-height:720px;
 		flex:1 1 45%;
 		& img{
 			width:100%;
@@ -509,10 +509,16 @@ left:100%;
 	flex: 1 1 55%;
 	margin-left:20px;
 }
+.xarak .omut__table td{
+	line-height:22px;
+}
 #xarak__images {
   max-width: 100%;
   animation: fade 5s linear infinite;
   animation-delay: 2.5s;
+}
+.fa-arrow-right{
+	color:$lime;
 }
 @keyframes fade {
   0% { opacity: 1 }

@@ -682,7 +682,7 @@ body {
   display: flex;
 }
 .xarak__image {
-  max-height: 650px;
+  max-height: 720px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 45%;
           flex: 1 1 45%;
@@ -702,12 +702,20 @@ body {
   margin-left: 20px;
 }
 
+.xarak .omut__table td {
+  line-height: 22px;
+}
+
 #xarak__images {
   max-width: 100%;
   -webkit-animation: fade 5s linear infinite;
           animation: fade 5s linear infinite;
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
+}
+
+.fa-arrow-right {
+  color: #6dce0e;
 }
 
 @-webkit-keyframes fade {
