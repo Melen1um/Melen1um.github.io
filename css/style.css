@@ -382,10 +382,11 @@ body {
 
 /* Header styles end */
 .first__block {
-  background: url("../img/bannerBlock.jpg");
+  background: url("../img/banneeer.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 0px 0px 30px 30px;
   padding: 120px 0px;
 }
 .first__block__title {
