@@ -1428,6 +1428,9 @@ text-align: left !important;
 	  z-index: 9;
 	  border-radius: 15px;
 }
+.head__menu_punct{
+	padding:7px 10px;
+}
 /* Header styles end */
 // first block
 
@@ -1642,6 +1645,21 @@ left:100%;
 }
 
 // five problem end
+// xarak
+.xarak__main{
+	flex-direction: column;
+}
+.xarak__image {
+	max-height:400px;
+	margin-bottom:15px;
+}
+.xarak__image img{
+	max-height:400px;
+}
+.xarak .omut__table {
+	margin-left:0px;
+}
+// xarak end
 // facts 
 .facts {
 	margin:110px 0px;

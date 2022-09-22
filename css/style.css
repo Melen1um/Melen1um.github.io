@@ -1769,6 +1769,10 @@ td {
     border-radius: 15px;
   }
 
+  .head__menu_punct {
+    padding: 7px 10px;
+  }
+
   /* Header styles end */
   .first__block {
     padding: 60px 0px;
@@ -2013,6 +2017,26 @@ td {
       left: 100%;
     }
   }
+  .xarak__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .xarak__image {
+    max-height: 400px;
+    margin-bottom: 15px;
+  }
+
+  .xarak__image img {
+    max-height: 400px;
+  }
+
+  .xarak .omut__table {
+    margin-left: 0px;
+  }
+
   .facts {
     margin: 110px 0px;
   }
